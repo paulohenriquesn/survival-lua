@@ -24,5 +24,5 @@ local player_loaded = PlayerRepository:load(1)
 Test:isEqual(player_loaded.level, 2, t1)
 
 os.remove("sys/lua/data/1.json")
-
+    
 --

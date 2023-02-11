@@ -21,11 +21,13 @@ function PlayerStorage:load(usgn)
             money = 0,
             level = 0,
             exp = 0,
+            reach_exp = 15,
             usgn = usgn
         })
     end
 
     GameRepository:store_player(player)
+    return player
 end
 
 return PlayerStorage
