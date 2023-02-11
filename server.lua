@@ -1,6 +1,7 @@
 -- Tests
 
 dofile("sys/lua/tests/player/player-entity-tests.lua")
+dofile("sys/lua/tests/player/player-level-tests.lua")
 dofile("sys/lua/tests/player/player-repository-tests.lua")
 dofile("sys/lua/tests/game/game-repository-tests.lua")
 

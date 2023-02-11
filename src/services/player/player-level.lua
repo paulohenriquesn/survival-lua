@@ -4,7 +4,7 @@ local PlayerLevel = {}
 
 function PlayerLevel:addExp(player_entity, exp)
     player_entity:update({
-        exp = player_entity.exp + 15
+        exp = player_entity.exp + exp
     })
 
     if (player_entity.exp >= player_entity.reach_exp) then

@@ -1,5 +1,5 @@
 function onPlayerSay(id, message)
-   
+
 end
 
 
