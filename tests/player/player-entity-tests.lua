@@ -1,4 +1,6 @@
-print("Running tests!")
+local Colors = require("sys/lua/src/utils/colors")
+
+print(""..Colors['purple'].."Running Player Entity Tests")
 
 local Test = require("sys/lua/libs/test")
 local Player = require("sys/lua/src/core/entities/player-entity")

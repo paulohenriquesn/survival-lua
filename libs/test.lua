@@ -1,3 +1,5 @@
+local Colors = require("sys/lua/src/utils/colors")
+
 local Test = {}
 
 function Test:describe(str)
@@ -10,7 +12,7 @@ function Test:isEqual(a,b, test)
         error("[TEST FAILED] "..test.." "..a.." is not equal as "..b.."")
         return
     end
-    print('©000178000[TEST PASSED] '..test)
+    print(''..Colors['green']..'[TEST PASSED] '..test)
 end
 
 function Test:isDifferent(a,b, test)
@@ -18,7 +20,7 @@ function Test:isDifferent(a,b, test)
         error("[TEST FAILED]"..test.." "..a.." is not different from "..b.."")
         return
     end
-    print('©000178000[TEST PASSED] '..test)
+    print(''..Colors['green']..'[TEST PASSED] '..test)
 end
 
 return Test
