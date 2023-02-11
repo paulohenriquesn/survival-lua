@@ -14,6 +14,9 @@ t1 = Test:describe("This has to create an entity and returns level 5")
 local mock_player = make_entity({
     level = 5
 })
+
+
+
 Test:isEqual(mock_player.level , 5 , t1)
 --
 

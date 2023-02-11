@@ -26,4 +26,14 @@ function GameRepository:get_player(usgn)
     end
 end
 
+
+function GameRepository:delete_player(usgn)
+  for i, entity in ipairs(players) do
+    if entity.usgn == usgn then
+      table.remove(players, i)
+      return
+    end
+  end
+end
+
 return GameRepository

@@ -20,8 +20,6 @@ function PlayerRepository:save(player_entity)
     else
         print("Error on saving player "..err)
     end
-
-    msg2(player_entity.id,'Saved!')
 end
 
 function PlayerRepository:load(player_usgn)

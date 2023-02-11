@@ -22,4 +22,15 @@ GameRepository:store_player(mock_player)
 local player = GameRepository:get_player(123)
 
 Test:isEqual(player.level , 2 , t1)
+
+--
+
+--
+t2 = Test:describe("This has to delete a player stored")
+
+GameRepository:delete_player(123)
+
+local player = GameRepository:get_player(123)
+
+Test:isEqual(player , nil , t2)
 --
