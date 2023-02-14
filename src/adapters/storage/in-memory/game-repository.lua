@@ -26,6 +26,14 @@ function GameRepository:get_player(usgn)
     end
 end
 
+function GameRepository:get_player_by_id(id)
+  for i, entity in ipairs(players) do
+    if entity.id == id then
+      return entity
+    end
+  end
+end
+
 
 function GameRepository:delete_player(usgn)
   for i, entity in ipairs(players) do

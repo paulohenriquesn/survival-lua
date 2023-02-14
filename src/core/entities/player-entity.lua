@@ -14,7 +14,14 @@ function Player:update(new_values)
     for key, value in pairs(new_values) do
       self[key] = value
     end
-  end
+end
 
+
+function Player:dead()
+  self:update({
+    hungry = 0,
+    thirst = 0
+  })
+end
 
 return Player

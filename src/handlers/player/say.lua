@@ -8,7 +8,7 @@ function onPlayerSay(id, message)
 
     message = string.gsub(message,"@C", "")
 
-    msg(''..Colors['orange']..'['.._player.level..'] '..Colors['white']..''..player(id,'name')..': '..message)
+    msg(''..Colors['orange']..'['.._player.level..'] '..Colors['blue']..''..player(id,'name')..': '..Colors['white']..''..message)
 
     return 1
 end

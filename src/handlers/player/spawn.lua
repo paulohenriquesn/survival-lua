@@ -1,12 +1,10 @@
 local PlayerHuds = require("src/services/player/player-huds")
-local PlayerLevel = require("src/services/player/player-level")
 local GameRepository = require("src/adapters/storage/in-memory/game-repository")
 
-function onPlayerKill(id)
+function onPlayerSpawn(id)
     local _player = GameRepository:get_player(player(id,'usgn'))
-    _player = PlayerLevel:addExp(_player, 15)
     PlayerHuds:load(id, _player)
 end
 
 
-addhook('kill', 'onPlayerKill')
+addhook('spawn', 'onPlayerSpawn')

@@ -11,3 +11,9 @@ dofile("sys/lua/src/handlers/player/leave-server.lua")
 dofile("sys/lua/src/handlers/player/join-server.lua")
 dofile("sys/lua/src/handlers/player/say.lua")
 dofile("sys/lua/src/handlers/player/kill.lua")
+dofile("sys/lua/src/handlers/player/spawn.lua")
+
+
+-- CronJobs
+
+dofile("sys/lua/src/cronjobs/every-minute.lua")

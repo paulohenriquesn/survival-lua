@@ -12,7 +12,7 @@ function PlayerStorage:save(usgn)
 end
 
 
-function PlayerStorage:load(usgn)
+function PlayerStorage:load(usgn, id)
     local player = PlayerRepository:load(usgn)
     
     if (player == nil) then
@@ -22,7 +22,9 @@ function PlayerStorage:load(usgn)
             level = 0,
             exp = 0,
             reach_exp = 15,
-            usgn = usgn
+            usgn = usgn,
+            hungry = 0,
+            thirst = 0
         })
     end
 
